@@ -1,5 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+
+import '@mantine/core/styles/global.css';
+import '@mantine/core/styles/UnstyledButton.css';
+import '@mantine/core/styles/Button.css';
+
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';

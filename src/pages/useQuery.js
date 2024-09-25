@@ -1,3 +1,4 @@
+import axios from 'axios'
 import {useEffect, useState} from 'react'
 //React Suspense
 //https://react.dev/reference/react/Suspense
@@ -19,12 +20,13 @@ export function useQuery(initialUrl){
         //https://developer.mozilla.org/es/docs/Web/API/Worker
         //https://developer.mozilla.org/en-US/docs/Web/API/Window/pagehide_event
 
-
-        fetch(url)        
+        axios.get(url)
+        //fetch(url)        
         //OK
         .then(response=>{
             if(response.status ===200){
-                return response.json()
+                //return response.json()
+                return response.data
             }
             else{
                 throw new Error("El cliente no existe")

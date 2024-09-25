@@ -5,7 +5,7 @@ export default function Menu() {
   const navigate = useNavigate()    
   return (
     <>
-      <NavLink label="usuarios" onClick={()=>navigate('/user')}>
+      <NavLink label="usuarios" data-page="/user" onClick={()=>navigate('/user')}>
       </NavLink>        
     </>
   );

@@ -1,5 +1,6 @@
 //"https://jsonplaceholder.typicode.com/posts"
-//import { useFetch } from '@mantine/hooks';
+//https://axios-http.com/es/docs/interceptors
+//https://www.freecodecamp.org/news/higher-order-components-in-react/
 import { useQuery } from './useQuery';
 
 export default function UserList(){

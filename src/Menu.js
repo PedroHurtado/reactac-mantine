@@ -1,13 +1,12 @@
-//import { NavLink } from "@mantine/core";
-import {Link} from 'react-router-dom'
+import { NavLink } from "@mantine/core";
+import {useNavigate} from 'react-router-dom'
 import "@mantine/core/styles/NavLink.css";
 export default function Menu() {
-  
+  const navigate = useNavigate()    
   return (
-    <>  
-      <Link to="/user">
-        Usuarios
-      </Link>    
+    <>
+      <NavLink label="usuarios" onClick={()=>navigate('/user')}>
+      </NavLink>        
     </>
   );
 }

@@ -3,6 +3,10 @@
 //https://www.freecodecamp.org/news/higher-order-components-in-react/
 import { useQuery } from './useQuery';
 
+const query(url, useQuery){
+    return useQuery
+}
+
 export default function UserList(){
     
     
